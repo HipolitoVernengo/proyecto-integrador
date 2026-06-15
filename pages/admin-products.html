@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-page</title>
+</head>
+
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/images/logo.png" alt="" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-separar" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="user">
+                            <div class="botones">
+                                <a href="" class="nav-link background">Registrarse <i
+                                        class="fa-solid fa-plus icon-plus"></i></a>
+                                <a href="" class="nav-link outline">Iniciar Sesion</a>
+                            </div>
+                            <div class="iconos">
+                                <a href="" class="nav-link"><i class="fa-regular fa-user"></i></a>
+                                <a href="" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-container">
+            <h2 class="bienvenida my-3 text-center">Bienvenido Admin ("Nombre")</h2>
+            <div class="table-container">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Ingreso</th>
+                            <th>Precio</th>
+                            <th class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td><img class="img-table-admin" src="/assets/products/product1.webp" alt=""></td>
+                            <td>Whey Protein Star Nutrition - (907g)</td>
+                            <td>10/06/2026</td>
+                            <td>$55000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td><img class="img-table-admin" src="https://www.enasport.com/cdn/shop/files/TM_WP_2lbCh.webp?v=1779904463&width=1000" alt=""></td>
+                            <td>TrueMade Whey Protein (930 Gr)</td>
+                            <td>10/06/2026</td>
+                            <td>$45000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td><img class="img-table-admin" src="https://farmalife.vtexassets.com/arquivos/ids/190555-1200-auto?v=638636532007070000&width=1200&height=auto&aspect=true" alt=""></td>
+                            <td>Creatina Micronizada Neutro X 300 G</td>
+                            <td>10/06/2026</td>
+                            <td>$23000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td><img class="img-table-admin" src="https://farmacityar.vtexassets.com/arquivos/ids/286947/162463_suplemento-dietario-creatina-micronizada-sabor-fruit-punch-x-300-gr_imagen-1.jpg?v=639027070168230000" alt="Imagen de producto"></td>
+                            <td>Creatina Micronizada Sabor a Fruit Punch x 300 g</td>
+                            <td>10/06/2026</td>
+                            <td>$26000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th><img class="img-table-admin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCto3NeZcNX1gl1ARrKSym_nXm8mX8G_ppng&s" alt="Imagen de producto"></th>
+                            <td>Truemade Amino full 146 grs (bcaa + cafeina) ena sports</td>
+                            <td>10/06/2026</td>
+                            <td>$55.000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle"> 
+                            <th><img class="img-table-admin" src="https://acdn-us.mitiendanube.com/stores/006/011/728/products/amino_4500_150tab-1-2afbc108c0247c383717527639545279-1024-1024.webp" alt="Imagen-producto"></th>
+                            <td>ENA Amino 4500 150 TABS</td>
+                            <td>10/06/2026</td>
+                            <td>$28000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th><img class="img-table-admin" src="https://farmacityar.vtexassets.com/arquivos/ids/258066-500-auto?v=638986541848970000&width=500&height=auto&aspect=true" alt="Imagen de producto"></th>
+                            <td>Shaker Pure Wellness</td>
+                            <td>10/06/2026</td>
+                            <td>$20.000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th><img class="img-table-admin" src="https://farmacityar.vtexassets.com/arquivos/ids/249565-500-auto?v=638362761999800000&width=500&height=auto&aspect=true" alt="Imagen de producto"></th>
+                            <td>Barra Proteica Pure Wellness Sabor Cookies and Cream x 46 g</td>
+                            <td>10/06/2026</td>
+                            <td>$55.000</td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+
+</html>
