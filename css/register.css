@@ -1,0 +1,33 @@
+.formulario-register{
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: var(--header-footer-color);
+    border-radius: 5px;
+
+    .title-register{
+        color: var(--background-principal);
+    }
+
+    .formulario{
+        padding-top: 1rem;
+        border-top: 2px solid var(--background-principal);
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+
+            input,select{
+                padding:5px;
+                background-color: #dddddd;
+                border-radius: 5px;
+                border: none;
+            }
+
+            label{
+                color: var(--background-principal);
+            }
+        }
+    }
+}
