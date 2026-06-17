@@ -38,7 +38,6 @@
         flex-direction: column;
         padding: 10px;
         justify-content: center;
-        width: 50%;
         background-color: var(--background-boxs);
         padding:1rem;
         border-radius:10px;
@@ -48,12 +47,12 @@
         }
 
         p{
-            font-size: 20px;
+            font-size: 1.5rem;
         }
     }
 
     .carousel-inner{
-        height: 550px;
+        height: 450px;
 
         .carousel-item{
             transition: 0.6s ease;
@@ -63,7 +62,7 @@
         flex: 1;
 
         img{
-            height: 550px;
+            height: 450px;
             width: 100%;
             border-radius: 10px;
             
@@ -101,6 +100,74 @@
         p{
             font-size: 20px;
             margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (width < 768px){
+    .banner{
+        height: 300px;
+
+        .banner-sentence{
+            font-size: 12px;
+        }
+    }
+
+    .hero{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media (width < 640px){
+    .banner{
+        .banner-sentence-container{
+            .banner-sentence{
+                font-size: 1rem;
+
+
+            }
+        }
+    }
+
+    .feature-container{
+        display: flex;
+        flex-direction: column;
+
+        .feature.borderr{
+            border-top :1px solid rgb(0, 0, 0,0.1);
+            border-left: none;
+        }
+    }
+    .hero{
+    .introduction{
+        .title-hero{
+            font-size: 1.7rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .carousel-inner{
+        height: 300px;
+
+        img{
+            height: 300px;
+        }
+}
+}
+}
+
+@media (width < 960px){
+    .hero{
+        .introduction{
+            .title-hero{
+                font-size: 2.3rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
         }
     }
 }

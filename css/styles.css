@@ -15,11 +15,9 @@ body {
 
 :root {
     --primary-color: #0F172A;
-    --secundary-color: #96999e;
     --accent-color: #FF6B35;
     --accent-hover: #E55A25;
     --background-principal: #FFFFFF;
-    --secundary-background: #F4F6F8;
     --header-footer-color: #333333;
     --background-boxs: rgb(168, 168, 168, 0.2);
 }
@@ -52,7 +50,7 @@ a {
 .navbar {
     display: flex;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1rem;
 
     .nav-link {
         color: white;
@@ -236,23 +234,6 @@ span {
     align-items: center;
 }
 
-.social-media{
-    flex:1;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-
-    .social-list{
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-
-        .social-item{
-            list-style: none;
-        }
-    }
-}
-
 .footer-container {
     display: flex;
     padding: 1rem;
@@ -264,6 +245,8 @@ span {
         flex-direction: column;
 
         .social-list {
+            display: flex;
+            flex-direction: column;
             padding: 0;
             margin: 0;
             margin-top: 5px;
@@ -402,3 +385,69 @@ ul {
         }
     }
 }
+
+@media (width < 960px){
+.nav-separar{
+    align-items: start;
+
+        .botones{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: end;
+        }
+        .user{
+            display: flex;
+            flex-direction: column;
+
+            .iconos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    .products{
+        .card{
+            flex: 0 0 250px;
+        }
+    }
+}
+}
+
+@media (width < 768px){
+
+    .form-map-container{
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        gap:3rem;
+
+        .social-media{
+            align-items: start;
+        }
+    }
+
+}
+
+@media (width < 640px){
+    .products-category-container{
+        flex-direction: column;
+
+        .product-section{
+            .products{
+                justify-content: center;
+            }
+        }
+    }
+
+    .products{
+        .card{
+            flex: 1 0 200px
+        }
+    }
+}
+
+

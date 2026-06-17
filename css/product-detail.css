@@ -42,3 +42,15 @@
     }
 }
 }
+
+@media (width < 760px){
+    .main-container{
+        .product-detail{
+            flex-direction: column;
+
+            .product-info{
+                padding: 1rem;
+            }
+        }
+    }
+}
